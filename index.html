@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFZZZ TIM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 30px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .logo {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 5px;
+            background: linear-gradient(to right, #ff8a00, #e52e71);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 10px rgba(229, 46, 113, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #a0a0c0;
+            margin-bottom: 10px;
+        }
+        
+        .button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 12px 0;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 117, 252, 0.3);
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(37, 117, 252, 0.4);
+        }
+        
+        .button:active {
+            transform: translateY(1px);
+        }
+        
+        .button.music {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            box-shadow: 0 4px 15px rgba(56, 239, 125, 0.3);
+        }
+        
+        .button.music:hover {
+            box-shadow: 0 7px 20px rgba(56, 239, 125, 0.4);
+        }
+        
+        .project-title {
+            text-align: center;
+            margin: 25px 0 15px;
+            font-size: 1.4rem;
+            color: #e0e0ff;
+            font-weight: 600;
+        }
+        
+        .menu-section {
+            background: rgba(30, 30, 60, 0.7);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(100, 100, 200, 0.2);
+        }
+        
+        .menu-title {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            color: #ff8a00;
+        }
+        
+        .menu-item {
+            background: rgba(40, 40, 80, 0.8);
+            padding: 12px 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border-left: 4px solid #ff8a00;
+        }
+        
+        .menu-item:hover {
+            background: rgba(50, 50, 100, 0.9);
+            transform: translateX(5px);
+        }
+        
+        .menu-item:nth-child(2) {
+            border-left-color: #e52e71;
+        }
+        
+        .menu-item:nth-child(3) {
+            border-left-color: #6a11cb;
+        }
+        
+        .menu-item:nth-child(4) {
+            border-left-color: #11998e;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #7070a0;
+            font-size: 0.9rem;
+        }
+        
+        .execute-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+            background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 65, 108, 0.4);
+            text-align: center;
+        }
+        
+        .execute-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(255, 65, 108, 0.5);
+        }
+        
+        .execute-btn:active {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">AFZZZ TIM</div>
+            <div class="subtitle">Menu Utama</div>
+        </div>
+        
+        <a href="#" class="button music">Select Music</a>
+        <a href="#" class="button">Putar Musik</a>
+        
+        <div class="project-title">AFZZZ COLLAB PROJECT</div>
+        
+        <a href="#" class="button">Bug Menu</a>
+        <a href="#" class="button">Ngl Spammer</a>
+        
+        <div class="menu-section">
+            <div class="menu-title">- Select Menu -</div>
+            <div class="menu-item">BUG FORCLOSE</div>
+            <div class="menu-item">BUG DELAY</div>
+            <div class="menu-item">BUG BLANK</div>
+            <div class="menu-item">BUG IOS</div>
+        </div>
+        
+        <button class="execute-btn">EXECUTE</button>
+        
+        <div class="footer">
+            Example 62...
+        </div>
+    </div>
+</body>
+</html>
